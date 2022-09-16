@@ -1,38 +1,55 @@
-* {
-    margin: 0;
+.header_line {
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
-header img {
+.header {
+    padding: 24px 0px 60px 0px;
+}
+
+.header-logo {
     width: 157px;
-    height: 53px;
-    left: 128px;
-    top: 24px;
-    bottom: 60px;
 }
 
-nav {
-    font-family: 'Lato', sans-serif;
-    font-style: normal;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 19px;
-    align-items: center;
+.header-menu {
+    /* align-items: center; */
     text-align: center;
     letter-spacing: 0.04em;
 }
 
-nav a {
+.header-menu li{
+    display: inline-block;
+}
+
+.header-menu li a {
     color: #388878;
+    /* font-size: 0px; */
+    font-family: 'Lato', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    font-size: 16px;
+    text-decoration: none;
+    padding: 24px 16px;
 }    
 
-ul {
-    list-style: none;
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+} 
+
+.fs {
+    width: 50%;
 }
 
 h2 {
     font-family: 'Glamour Absolute';
     font-style: normal;
-    font-weight: 400;
+    font-weight: 600;
     font-size: 56px;    
     line-height: 64px;
     letter-spacing: 0.04em; 
@@ -46,7 +63,20 @@ h2 {
     color: #FFFFFF;
 }
 
-section:not(#Reviews) p {    
+.text-center {
+    text-align: center; 
+}
+
+.text-right {
+    text-align: right; 
+}
+
+.float-over {
+    overflow: auto;
+}
+
+section:not(#Reviews) p {   
+    width: 100%; 
     color: #3C5049;
     font-family: 'Lato', sans-serif;
     font-style: normal;
@@ -58,9 +88,13 @@ section:not(#Reviews) p {
 }
 
 #Welcome {
-    margin-top: 60px;
     margin-bottom: 200px;
     margin-right: 129px;
+}
+
+#Welcome div {
+    max-width: 504px;
+    padding: 127px 0px 127px 60px;
 }
 
 #Choose {
@@ -69,9 +103,26 @@ section:not(#Reviews) p {
     margin-left: 133px;
 }
 
+.Choose-text {
+    max-width: 504px;
+    padding: 142px 16px 142px 0px;
+}
+
 #Menu {
     margin-bottom: 200px;
     margin-left: 127px;
+}
+
+.menu-text-img {
+    max-width: 504px;
+    padding: 70px 104px 0px 0px;
+}
+
+.menu-text {
+    background: #456658;
+    height: 752px;
+    padding: 130px 64px 0px 0px;
+    text-align: right;
 }
 
 #BOOK {
@@ -79,12 +130,16 @@ section:not(#Reviews) p {
     margin-right: 122px; 
 } 
 
+.book-text {
+    max-width: 591px;
+    padding: 0px 0px 226px 31px;
+}
+
 #Reviews {
     background: #456658;
 }
 
 #Reviews p {
-    background: white;
     font-family: 'Lato';
     font-style: normal;
     font-weight: 400;
@@ -92,14 +147,21 @@ section:not(#Reviews) p {
     line-height: 19px;
     text-align: center;
     letter-spacing: 0.04em;
-
-/* Green/Primary */
-
-color: #3C5049;
+    color: #3C5049;
 }
 
-#Menu h2{
-    background: #456658;
+#Reviews article{
+    background: white;
+    display: inline-block;
+    width: 331px;
+    height: 217px;
+    vertical-align: bottom;
+}
+
+.Reviews-article {
+    width: 100%;
+    max-width: 1025px;
+    margin: 0 auto;
 }
 
 button {
@@ -108,11 +170,20 @@ button {
     font-weight: 600;
     font-size: 16px;
     line-height: 19px;
-    text-align: justify;
+    /* text-align: justify; */
     letter-spacing: 0.08em;
     width: 157px;
     height: 46px;
     background: #3C5049;
     color: #FFFFFF;
     text-align: center;
+}
+
+.button {
+    padding-top: 48px;
+}
+
+.button1 {
+    padding-top: 28px;
+    padding-bottom: 47px;
 }
